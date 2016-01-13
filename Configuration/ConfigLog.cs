@@ -34,7 +34,7 @@ namespace ICG.Utiles.Configuracion
         public static string GetConnectionString(ConfigEnt config, char db)
         {
             string conn = null;
-            switch (@db)
+            switch (db)
             {
                 case 'G':
                     conn = $@"Data Source = {config.Instancia};
